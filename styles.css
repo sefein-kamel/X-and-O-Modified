@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Header*/
+.header{
+    width: 100%;
+    position: absolute;
+    background-color: #555;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    top: 0px;
+    left: 0;
+    margin: 0;
+}
+
+.header .xh{
+    color: red;
+}
+.header .oh{
+    color: blue;
+}
+
+/*The content*/
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 90vmin;
+    height: 80vmin;
+    gap: 5px;
+  }
+  .cell {
+    border: 2px solid #222;
+    font-size: 8vmin;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .x {
+    color: red;
+    font-size: 125px;
+  }
+  .o {
+    color: blue;
+    font-size: 125px;
+  }
+
+    /*Footer*/
+.footer{
+    width: 100%;
+    position: absolute;
+    direction: ltr;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 0px;
+    text-align: center;
+    font-size: 15px;
+    bottom: 0px;
+    left: 0;
+    margin: 0;
+}
+
+.footer span{
+    font-weight: bold;
+    color: black;
+}
